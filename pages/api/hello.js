@@ -1,4 +1,11 @@
+import path from 'path'
 import sharp from 'sharp'
+
+let basePath = process.cwd()
+if (process.env.NODE_ENV === 'production') basePath = path.join(process.cwd(), '.next/server/chunks')
+
+path.resolve(basePath, 'fonts', 'fonts.conf')
+path.resolve(basePath, 'fonts', 'inconsolata.ttf')
 
 const demoSVG = `
 <svg width="150" height="150" viewBox="0 0 150 150">

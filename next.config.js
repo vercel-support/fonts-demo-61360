@@ -5,6 +5,8 @@ module.exports = {
   reactStrictMode: true,
   experimental: { outputFileTracing: true },
 
+  webpack5: true,
+
   webpack: function (config, { dev, isServer }) {
     // Fixes npm packages that depend on `fs` module
     if (!isServer) {
