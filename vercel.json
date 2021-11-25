@@ -1,7 +1,7 @@
 {
-   "functions": {
-      "pages/api/hello.js": {
-         "includeFiles": "fonts/**"
-      }
-   }
+  "functions": {
+    "api/hello.js": {
+      "includeFiles": "fonts/**"
+    }
+  }
 }
