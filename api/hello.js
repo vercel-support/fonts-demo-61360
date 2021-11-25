@@ -9,10 +9,12 @@ const file = readFileSync(
   'utf-8',
 );
 
-const handler = async (req, res) => {
-  console.log('__font_path__', fontPath);
-  console.log('__file', file);
+const font = readFileSync(fontPath, 'binary');
 
+const handler = async (req, res) => {
+  console.log('__file__ is included', file);
+
+  console.log('__font_path__ is not…', fontPath);
   const demoSVG = `
 <svg width="150" height="150" viewBox="0 0 150 150">
   <style type="text/css">
