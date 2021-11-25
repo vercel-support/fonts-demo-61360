@@ -18,7 +18,7 @@ const handler = async (req, res) => {
   <style type="text/css">
     @font-face {
       font-family: Inconsolata;
-      src: ${fontPath};
+      src: url(${fontPath}) format("truetype");
     }
   </style>
   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
