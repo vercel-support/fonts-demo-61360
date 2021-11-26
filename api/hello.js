@@ -4,12 +4,12 @@ import sharp from 'sharp';
 
 const fontPath = path.join(process.cwd(), 'fonts', 'inconsolata.ttf');
 
+path.join(process.cwd(), 'fonts', 'fonts.conf');
+
 const file = readFileSync(
   path.join(process.cwd(), 'fonts', 'file.md'),
   'utf-8',
 );
-
-const font = readFileSync(fontPath, 'binary');
 
 const handler = async (req, res) => {
   console.log('__file__ is included', file);
