@@ -4,17 +4,10 @@ import sharp from 'sharp';
 
 const fontPath = path.join(process.cwd(), 'fonts', 'inconsolata.ttf');
 
+// Load the configuration
 path.join(process.cwd(), 'fonts', 'fonts.conf');
 
-const file = readFileSync(
-  path.join(process.cwd(), 'fonts', 'file.md'),
-  'utf-8',
-);
-
 const handler = async (req, res) => {
-  console.log('__file__ is included', file);
-
-  console.log('__font_path__ is not…', fontPath);
   const demoSVG = `
 <svg width="150" height="150" viewBox="0 0 150 150">
   <style type="text/css">

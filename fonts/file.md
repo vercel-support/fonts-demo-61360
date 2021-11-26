@@ -1,3 +1,0 @@
-# Some file
-
-Hello
